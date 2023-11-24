@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label>
+            <span>Name</span>
+            <input type="text" id="name">
+            <input type="text" id="name2">
+        </label>
+    </form>
+    <button>yuborish</button>
+    <p id="data"></p>
+
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.getElementById("data");
+
+        function hello(a, b) {
+
+            p.innerHTML +=  a + b + b + a
+        }
+
+        btn.addEventListener("click", function () {
+            let name = document.getElementById("name").value;
+            let name2 = document.getElementById("name2").value;
+
+            hello(name, name2)
+        });
+    </script>
+</body>
+
+</html>
